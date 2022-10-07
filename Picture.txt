@@ -1,0 +1,135 @@
+#include <SFML/Graphics.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <iostream>
+
+using namespace cv;
+using namespace std;
+using namespace sf;
+
+
+int main(int argc, char** argv)
+{
+    srand(time(NULL));
+
+    Image track;
+    Mat image;
+    Color color;
+
+    Vec3b pixelColorBlack(255, 255, 255);
+    Vec3b pixelColorWhite(0, 0, 0);
+
+
+    int Matrix[2][2] =
+    {
+        {0, 2},
+        {3, 1}
+    };
+
+    if (argc != 2)
+    {
+        cout << " Usage: display_image ImageToLoadAndDisplay" << endl;
+        return -1;
+    }
+
+    image = imread(argv[1], IMREAD_COLOR); // Read the file
+    track.loadFromFile("building.jpg");
+    
+
+    if (!image.data) // Check for invalid input
+    {
+        cout << "Could not open or find the image" << endl;
+        return -1;
+    }
+
+    //ORDERED DITHER
+    /*for (int y = 0; y < image.rows; y++) {
+        for (int x = 0; x < image.cols; x++) {
+
+            color = track.getPixel(x, y);
+
+            if ( ((color.r * 5) / 256) > Matrix[y % 2][x % 2])
+                image.at<Vec3b>(Point(x, y)) = pixelColorBlack;
+            else
+                image.at<Vec3b>(Point(x, y)) = pixelColorWhite;
+        }
+    }*/
+
+    //ERROR DIFFUSION: FRANKIE SIERRA
+    /*unsigned char newPixel;
+    unsigned char Error;
+    unsigned char right_Pixel;
+    unsigned char down_Pixel;
+    unsigned char down_left_Pixel;
+
+    for (int y = 0; y < image.rows - 1; y++) {
+        for (int x = 1; x < image.cols - 1; x++) {
+
+            color = track.getPixel(x, y);
+            newPixel = (color.r > 128) ? 255 : 0;
+            Vec3b newPixelColor(newPixel, newPixel, newPixel);
+            image.at<Vec3b>(Point(x, y)) = newPixelColor;
+
+            Error = color.r - newPixel;
+
+            color = track.getPixel(x + 1, y);
+            right_Pixel = color.r + Error * 2.0 / 4;
+
+            Vec3b right_colorPixel(right_Pixel, right_Pixel, right_Pixel);
+            image.at<Vec3b>(Point(x + 1, y)) = right_colorPixel;
+
+            color = track.getPixel(x, y + 1);
+            down_Pixel = color.r + Error * 1.0 / 4;
+
+            Vec3b down_colorPixel(down_Pixel, down_Pixel, down_Pixel);
+            image.at<Vec3b>(Point(x, y + 1)) = down_colorPixel;
+
+            color = track.getPixel(x - 1, y + 1);
+            down_left_Pixel = color.r + Error * 1.0 / 4;
+
+            Vec3b down_left_colorPixel(down_left_Pixel, down_left_Pixel, down_left_Pixel);
+            image.at<Vec3b>(Point(x - 1, y + 1)) = down_left_colorPixel;
+        }
+    }*/
+
+    unsigned char Y, Cr, Cb;
+    /*for (int y = 0; y < image.rows - 1; y++) {
+        for (int x = 1; x < image.cols - 1; x++) {
+
+            color = track.getPixel(x, y);
+            Y = (0.299 * color.r) + (0.587 * color.g) + (0.114 * color.b);
+
+            Vec3b pixelColorY(Y, Y, Y);
+            image.at<Vec3b>(Point(x, y)) = pixelColorY;
+        }
+    }*/
+
+    /*for (int y = 0; y < image.rows - 1; y++) {
+        for (int x = 1; x < image.cols - 1; x++) {
+
+            color = track.getPixel(x, y);
+            Cr = ((0.1687 * color.r) + (-0.3313 * color.g) + (0.5 * color.b)) + 128;
+
+            Vec3b pixelColorY(Cr, Cr, Cr);
+            image.at<Vec3b>(Point(x, y)) = pixelColorY;
+        }
+    }*/
+
+    /*for (int y = 0; y < image.rows - 1; y++) {
+        for (int x = 1; x < image.cols - 1; x++) {
+
+            color = track.getPixel(x, y);
+            Cb = ((0.5 * color.r) + (-0.4187 * color.g) + (-0.0813 * color.b)) + 128;
+
+            Vec3b pixelColorY(Cb, Cb, Cb);
+            image.at<Vec3b>(Point(x, y)) = pixelColorY;
+        }
+    }*/
+
+    namedWindow("Display window", WINDOW_AUTOSIZE); 
+    imshow("Display window", image); 
+    //imwrite("imageCb.jpg", image); // сохранение изображения в jpg
+
+    waitKey(0); 
+    return 0;
+}
