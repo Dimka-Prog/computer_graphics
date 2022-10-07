@@ -1,0 +1,5 @@
+﻿  spline.cpp
+C:\KG Graphics\Spline\Spline\spline.cpp(128,17): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\KG Graphics\Spline\Spline\spline.cpp(128,14): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\KG Graphics\Spline\Spline\spline.cpp(144,34): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Spline.vcxproj -> C:\KG Graphics\Spline\x64\Debug\Spline.exe
