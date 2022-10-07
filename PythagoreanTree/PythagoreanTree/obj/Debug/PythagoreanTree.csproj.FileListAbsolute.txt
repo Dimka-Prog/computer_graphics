@@ -1,0 +1,11 @@
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\bin\Debug\PythagoreanTree.exe.config
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\bin\Debug\PythagoreanTree.exe
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\bin\Debug\PythagoreanTree.pdb
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.csproj.AssemblyReference.cache
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.csproj.SuggestedBindingRedirects.cache
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.Form1.resources
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.Properties.Resources.resources
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.csproj.GenerateResource.cache
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.csproj.CoreCompileInputs.cache
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.exe
+C:\KG Graphics\PythagoreanTree\PythagoreanTree\obj\Debug\PythagoreanTree.pdb

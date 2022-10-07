@@ -1,0 +1,43 @@
+﻿  rectangle.cpp
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(137,31): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(137,22): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(138,31): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(138,22): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(139,31): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(139,22): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(140,31): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(140,22): warning C4244: аргумент: преобразование "_Ty" в "GLfloat", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\KG Graphics\ConcentricRectangle\ConcentricRectangle\rectangle.cpp(147,28): warning C4305: аргумент: усечение из "double" в "GLfloat"
+  ConcentricRectangle.vcxproj -> C:\KG Graphics\ConcentricRectangle\x64\Debug\ConcentricRectangle.exe

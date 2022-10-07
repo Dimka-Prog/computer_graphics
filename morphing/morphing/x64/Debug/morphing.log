@@ -1,0 +1,12 @@
+﻿  morphing.cpp
+C:\KG Graphics\morphing\morphing\morphing.cpp(36,19): warning C4244: инициализация: преобразование "_Tp" в "int", возможна потеря данных
+          with
+          [
+              _Tp=float
+          ]
+C:\KG Graphics\morphing\morphing\morphing.cpp(37,19): warning C4244: инициализация: преобразование "_Tp" в "int", возможна потеря данных
+          with
+          [
+              _Tp=float
+          ]
+  morphing.vcxproj -> C:\KG Graphics\morphing\x64\Debug\morphing.exe

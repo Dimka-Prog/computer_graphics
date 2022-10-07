@@ -1,0 +1,7 @@
+﻿  polyhedron.cpp
+C:\KG Graphics\Polygon\Polygon\polyhedron.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\KG Graphics\Polygon\Polygon\polyhedron.cpp(25,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\KG Graphics\Polygon\Polygon\polyhedron.cpp(26,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\KG Graphics\Polygon\Polygon\polyhedron.cpp(41,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\KG Graphics\Polygon\Polygon\polyhedron.cpp(80,34): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Polygon.vcxproj -> C:\KG Graphics\Polygon\x64\Debug\Polygon.exe
